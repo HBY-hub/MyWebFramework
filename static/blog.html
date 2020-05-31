@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INDEX</title>
+</head>
+<body>
+    <!--导航-->
+  <nav >
+    <div>index</div>
+    </div>
+
+  </nav>
+    <br>
+    <br>
+    <br>
+    <a href="http://localhost:5000/login">login</a>
+    <a href="http://localhost:5000/logout">logout</a>
+        <br>
+    <br>
+
+  <!--中间内容-->
+    <div>
+        {% for blog in blogs %}
+            <div>
+                <h2>{{blog['title']}}</h2>
+                <p>{{blog['content']}}</p>
+            </div>
+        {% end %}
+    </div>
+  <br>
+  <br>
+  <!--底部footer-->
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+  <script>
+    $('.menu.toggle').click(function () {
+      $('.m-item').toggleClass('m-mobile-hide');
+    });
+  </script>
+</body>
+</html>

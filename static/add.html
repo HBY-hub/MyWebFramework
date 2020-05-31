@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+<form class="ui large form" method="post" action="/add">
+          <div class="ui stacked segment">
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="user icon"></i>
+                <input type="text" id="title" name="title" placeholder="标题">
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="lock icon"></i>
+                  <textarea id="content" name="content" style="width: 500px;height: 300px" placeholder="内容"></textarea>
+              </div>
+            </div>
+              <input type="submit" value="提交">
+          </div>
+
+          <div class="ui error message"></div>
+        </form>
+
+</body>
+</html>
